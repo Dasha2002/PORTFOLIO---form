@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Создаем красиво</h1>
+
+    <!--FORM-->
+    <div class="form">
+        <form action="#" method="post">
+            <legend>Заполни заявку на создание сайта</legend>
+<fieldset class="fieldset-1">
+    <legend>Личные данные</legend>
+     <div class="input-wrapper">
+        <label for="name">Имя</label>
+        <input id="name" name="user-name" type="text" placeholder="Иван" required>
+    </div>
+    <div class="input-wrapper">
+        <label for="age">Возраст</label>
+        <input id="age" type="number" min="18" max="125" name="user-age" placeholder="18" required>
+    </div>
+    <div class="input-wrapper">
+        <p>Я являюсь:</p>
+    <input type="radio" id="person" name="person-ip" value="person">
+        <label for="person">Физ.лицо</label>
+    <input type="radio" id="ip" name="person-ip" value="ip">
+        <label for="ip">ИП</label>
+    </div>
+</fieldset>
+
+<fieldset class="fieldset-2">
+    <legend>Контакты</legend>
+     <div class="input-wrapper">
+        <label for="email">Электронная почта</label>
+        <input id="email" type="email" name="user-email" placeholder="ivan@yandex.ru" required inputmode="email">
+    </div>
+
+    <div class="input-wrapper">
+        <label for="phone">Номер телефона</label>
+        <input id="phone" name="user-tel" type="tel" placeholder="+7 (000) 000 00 00" inputmode="tel" minlength="11" maxlength="11">
+    </div>
+
+    <div class="input-wrapper">
+        <label for="city">Из какого вы города:</label>
+        <select id="city" name="user-city" required>
+            <option disabled value="" selected>Нажми чтобы выбрать</option>
+            <option value="Moskow">Москва</option>
+            <option value="SPB">Санкт-Петербург</option>
+            <option value="Kazan">Казань</option>
+            <option value="Novosibirsk">Новосибирск</option>
+        </select>
+    </div>
+</fieldset>
+   
+<fieldset class="fieldset-3">
+    <legend>Дополнительно</legend>
+     <div class="input-wrapper">
+        <label for="document">Прикрепи макет(ы) сайта (если имеются)</label>
+        <input id="document" type="file" multiple>
+    </div>
+
+    <div class="input-wrapper">
+        <input type="checkbox" id="citizenship" name="citizenship" value="agreement" checked required>
+        <label for="citizenship">Я являюсь гражданином РФ</label>
+    </div>
+    <div class="input-wrapper">
+        <input type="checkbox" id="custom-checkbox" name="custom-checkbox" value="agreement" checked required>
+        <label for="custom-checkbox">Я согласен с условиями обработки личных данных</label>
+    </div>
+<div class="input-wrapper">
+    <label for="wish">Пожелания к оформлению</label>
+    <textarea id="wish" name="user-comment" placeholder="Хочу больше синего цвета..."></textarea>
+</div>
+</fieldset>
+
+        <button type="submit">Отправить</button>
+
+    </form>
+    </div>
+    <!--FORM-->
+<script src="script.js"></script>
+</body>
+</html>
