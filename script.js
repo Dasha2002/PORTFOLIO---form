@@ -78,12 +78,3 @@ inputButtonEye.forEach(button => {
   });
 });
 
-/*
-inputButtonEye.addEventListener ('click', function changeButtonImg(){
-    const input = this.previousElementSibling;
-
-    if(input.type === 'password'){
-        input.type = 'text';
-    }
-});
-*/

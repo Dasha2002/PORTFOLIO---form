@@ -28,7 +28,7 @@ form {
     background-color: #171717;
     border-radius: 22px;
     transition: all .3s;
-    border: 2px solid transparent; /* Добавляем прозрачную границу */
+    border: 2px solid transparent; 
 }
 
 .form:hover {
